@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/contact-me">
+        <label for="email">Username: </label>
+        <input type="text" id="email" placeholder="email" required> <br>
+
+        <label for="user_password">Password: </label>
+        <input type="password" id="user_password"><br>
+
+        Date: <input type="date"> <br>
+        File: <input type="file"> <br>
+        Color: <input type="color"> <br>
+        Price Range: <input type="range"> <br>
+        Poke me: <input type="button" value="poked"> <br>
+        
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male"><br>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female"> <br> <!-- name attribute should be different for multiple options -->
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other"> <br>
+
+        <label for="c">C</label>
+        <input type="checkbox" name="lang" id="c" value="c"><br>
+        <label for="java">Java</label>
+        <input type="checkbox" name="lang" id="java" value="java"><br>
+        <label for="python">Python</label>
+        <input type="checkbox" name="lang" id="python" value="python"> <br>
+
+        <label for="country">Select your country: </label>
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Other">Other</option>
+        </select> <br>
+
+        <textarea name="story" id="story" cols="30" rows="4">
+            Please write a story
+        </textarea>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
